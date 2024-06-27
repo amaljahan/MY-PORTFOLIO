@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0886cbd150.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;0,900;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header-home">
+        <div class="container">
+           
+            <nav>
+                <div class="logo-div">
+                    <img src="images/MY LOGO.png" alt="" class="logo">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header-home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
+                </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>A</span>mal <span>J</span>ahan <br> from INDIA</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AJ IMG.jpg" alt="" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello my name is AMAL JAHAN , I'm a gradute in Bachelors of Computer Science at Calicut University in India. I love to make website 
+                        it's like a fun to me. Which give me somekind of happiness. Now I am studying about it to make it more attractive and usefull. So that is 
+                        short description about me.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App interface</li>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <li><span>App Development</span> <br>Building Android apps</li>
+                        </ul>
+                    </div>    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024- Current</span> <br>MERN Stack development Training at BROTOTYPE.</li>
+                            <li><span>2023-2024</span> <br>UI/UX Designing and Android App develeopment Training at REGIONAL TECHNOLOGIES in Calicut.</li>
+                        </ul>
+                    </div>    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span> <br>B.sc COMPUTER SCIENCE at Calicut University.</li>
+                            <li><span>2021</span> <br>Plus two BIOLOGY SCIENCE.</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- --------------------------services--------------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i><!--it is for the code icon-->
+                      <h2>Web Design</h2>
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Nam facilis sequi ips
+                         a quod, fugit dolorum perspiciatis volu
+                         ptatem voluptates incidunt. Ipsum quos dol
+                         oremque reiciendis itaque illo id ab ullam
+                          maxime temporibus.
+                        </p>  
+                        <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                      <h2>UI/UX Design</h2>
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Nam facilis sequi ips
+                         a quod, fugit dolorum perspiciatis volu
+                         ptatem voluptates incidunt. Ipsum quos dol
+                         oremque reiciendis itaque illo id ab ullam
+                          maxime temporibus.
+                        </p>  
+                        <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                      <h2>App Design</h2>
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Nam facilis sequi ips
+                         a quod, fugit dolorum perspiciatis volu
+                         ptatem voluptates incidunt. Ipsum quos dol
+                         oremque reiciendis itaque illo id ab ullam
+                          maxime temporibus.
+                        </p>  
+                        <a href="#">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work 1.png" alt="">
+                    <div class="layer">
+                        <h3>Social problem updating App</h3>
+                        <p>The app connects you to the important peoples who work under the government for maintaining the road and safety infrastructure over the country.
+                            
+                        </p>
+                        <a href="http://127.0.0.1:8000/PWD_HOME"><i class="fa-solid fa-paperclip"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                        </p>
+                        <a href="https://amaljahan.github.io/web1/"><i class="fa-solid fa-paperclip"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Its a clone of Facebook.
+                        </p>
+                        <a href="https://amaljahan.github.io/responsive-of-FB/"><i class="fa-solid fa-paperclip"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- -----------------------Contact----------------------------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> amaljahan3@gmail.com</p>
+                        <p><i class="fas fa-phone-square"></i> +91 9747461058</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61560538396082"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/amaljahan_/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/amal-jahan-7b3734311/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="submit-form">
+                            <input id="name" type="text" name="name" placeholder="Your name" >
+                            <input id="email" type="email" name="email" placeholder="Your Email" >
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                 <p>Copyright &copy; Amal Jahan &nbsp;&nbsp;2024</p>
+            </div>
+        </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+        // -----------------form------------------------
+
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwzf20W6m0Jle1H9vN4XRCu94k3AtoW9PlO3VN2psq4FNxY2eGy_AxB6wklpxO-FBMe/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+
+
+        // -----------------validation----------------------
+
+        // const submitform =document.getElementById('submit-form');
+        // const name =document.getElementById('name');
+        // const email =document.getElementById('email');
+
+        // submitform.addEventListener('submit', e =>{
+        //     e.preventDefault();
+        // });
+
+        // const setError = (element, message) =>{
+        //     const inputControl = element.parentElement;
+        //     const errorDisplay =inputControl.querySelector('.error');
+
+        //     errorDisplay.innerText = message;
+        //     inputControl.classList.add('error');
+        //     inputControl.classList.remove('success');
+        // }
+
+        // const setSuccess = element =>{
+        //     const inputControl = element.parentElement;
+        //     const errorDisplay = inputControl.querySelector('.error');
+
+        //     errorDisplay.innerText = '';
+        //     inputControl.classList.add('success');
+        //     inputControl.classList.remove('error');
+
+        // };
+
+        // const isvalidEmail =email =>{
+        //     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        //     return re.test(String(email).toLowerCase());
+        // }
+
+
+        // const validateInputs = () =>{
+        //     const namevalue = name.value.trim();
+        //     const emailvalue =email.value.trim();
+
+        //     if(namevalue ===''){
+        //         setError(name,'Name is required');
+        //     } else{
+        //         setSuccess(name);
+        //     }
+        //     if(emailvalue === ''){
+        //         setError(email,'Email is required');
+        //     } else if (!isValidEmail(emailValue)) {
+        //         setError(email, 'Provide a valid email address');
+        //     } else {
+        //         setSuccess(email);
+        //     }
+        // };
+
+
+    </script>
+</body>
+</html>
