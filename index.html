@@ -177,9 +177,9 @@
                     </div>
                     <div class="contact-right">
                         <form id="submit-form">
-                            <input id="name" type="text" name="name" placeholder="Your name" >
-                            <input id="email" type="email" name="email" placeholder="Your Email" >
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <input id="name" type="text" name="name" placeholder="Your name" required >
+                            <input id="email" type="email" name="email" placeholder="Your Email" required >
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                             
                         </form>
@@ -296,6 +296,39 @@
         //         setSuccess(email);
         //     }
         // };
+
+        // ----------------------validation 2-----------------------------------------
+
+        const name =document.getElementById('name')
+        const email =document.getElementById('email')
+        const submitform =document.getElementById('submit-form')
+        const msg =document.getElementById('msg')
+        const errorElement =document.getElementById('error')
+
+        submitform.addEventListener('submit', (e) =>{
+            let messages = []
+            if(name.value === '' || name.value == null){
+                messages.push('Name is required')
+            }
+            if(eamil.value === '' || name.value == null){
+                messages.push('Email is required')
+            }else if (!email.value.includes('@')) {
+                 messages.push('Email must contain @ symbol');
+            }
+
+
+            if(msg.value.length >=1){
+                messages.push('Message contain more than one character')
+            }
+
+
+            
+            if (messages.length > 0){
+                e.preventDefault()
+                errorElement.innerText = messages.join(', ')
+            }
+        })
+        
 
 
     </script>
